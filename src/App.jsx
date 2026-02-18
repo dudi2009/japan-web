@@ -4,6 +4,7 @@ import Slider from "./Slider.jsx";
 import Map from "./Map.jsx";
 import Intrest from "./intrest.jsx";
 import Footer from "./Footer.jsx";
+import Articles from "./articles.jsx";
 
 
 export default function (){
@@ -56,6 +57,8 @@ export default function (){
       <Map></Map>
       <h1 className="popular">Find Your Intrest About<strong className="jp"> Japan</strong></h1>
       <Intrest></Intrest>
+      <h1 className="popular">Articles About<strong className="jp"> Japan</strong></h1>
+      {/* <Articles></Articles> */}
       <Footer></Footer>
     </>
   );

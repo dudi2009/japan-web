@@ -1,3 +1,5 @@
+
+
 /* Footer Styles */
 .footer {
   background: #181818;
@@ -362,4 +364,30 @@ p{
   color: white;
   border: solid 2px white;
   border: 20px;
+}
+.dark-mode .footer {
+  background: #111;
+  color: #f1f1f1;
+}
+.dark-mode .footer-icons a {
+  background: #232323;
+  color: #f1f1f1;
+}
+.dark-mode .footer-icons a:hover {
+  background: #fff;
+  color: #181818;
+}
+.dark-mode .footer-menu {
+  background: #111;
+}
+.dark-mode .footer-menu li {
+  color: #f1f1f1;
+  border-color: #f1f1f1;
+}
+.dark-mode .footer-menu li:hover {
+  color: #ff5252;
+}
+.dark-mode .footer-copyright {
+  background: hsl(0, 0%, 2%);
+  color: #f1f1f1;
 }
