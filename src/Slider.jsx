@@ -33,6 +33,22 @@ export default function Slider() {
       title: "Neko-jima",
       des: "Known as Japan's Cat Island, Aoshima is a remote sanctuary where feline residents vastly outnumber the small human population. Originally brought to control mice on fishing boats, the cats now roam freely through the quiet village and harbor. This peaceful destination offers a unique experience for animal lovers looking to escape the city's hustle and bustle.",
     },
+        {
+      img: "https://images.unsplash.com/photo-1550303435-1703d8811aaa?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Nara",
+      des: "Nara was Japan’s first permanent capital and remains a treasure trove of cultural landmarks. It is best known for Nara Park, where hundreds of wild sika deer roam freely and interact with visitors. The city is also home to the massive Todai-ji Temple, housing one of the world’s largest bronze Buddha statues within its impressive wooden hall structure."
+    },
+    {
+      img: "https://images.unsplash.com/photo-1697605623014-c68d4b666420?q=80&w=1430&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Hiroshima",
+      des: "A city defined by its resilience and message of peace, Hiroshima is a deeply moving destination. The Peace Memorial Park and Atomic Bomb Dome serve as reminders of the past, while the nearby Miyajima Island offers one of Japan’s most scenic views with its iconic floating torii gate. Today, it is a vibrant city known for its delicious local okonomiyaki."
+    },
+    {
+      img: "https://images.unsplash.com/photo-1755789487714-5a681b890406?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      title: "Sapporo",
+      des: "As the capital of Hokkaido, Sapporo is famous for its open green spaces, world-class ramen, and the spectacular annual Snow Festival. It offers a cooler climate and a more relaxed urban atmosphere compared to Tokyo. From the historic Clock Tower to the scenic Odori Park, the city serves as a gateway to the mountains and hot springs of northern Japan."
+    },
+
   ];
 
   const duplicatedData = [...data, ...data, ...data];
@@ -77,9 +93,9 @@ export default function Slider() {
             <img src={item.img} alt="" />
             <h3>{item.title}</h3>
             <p>
-              {item.des.length > 260 ? (
+              {item.des.length > 230 ? (
                 <>
-                  {item.des.slice(0, 260)}
+                  {item.des.slice(0, 230)}
                   <span
                     style={{
                       color: "gray",

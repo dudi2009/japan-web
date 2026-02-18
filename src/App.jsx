@@ -1,6 +1,8 @@
 import React from "react";
 import "./index.css"
 import Slider from "./Slider.jsx";
+import Map from "./Map.jsx";
+
 
 export default function (){
   const [dark, setDark] = React.useState(() => {
@@ -37,16 +39,19 @@ export default function (){
         <div className="background"></div>
         <div className="hero">
           <div className="kiri">
-          <h1>Japan</h1>
-          <p>Japan, often referred to as the "Land of the Rising Sun," is an archipelago in East Asia located in the Pacific Ocean. It is comprised of over 14,000 islands, with the four largest being Honshu, Hokkaido, Kyushu, and Shikoku. Approximately 75% of the country's terrain is mountainous and forested, dominated by the dramatic Japanese Alps and the iconic Mount Fuji. Known for its unique blend of ancient traditions and cutting-edge technology, Japan is a global leader in the automotive and electronics industries and is home to the world's fourth-largest economy. Its society places a high value on harmony and discipline, while its culture—ranging from traditional tea ceremonies to modern anime and manga—continues to influence the world. Governed as a unitary parliamentary constitutional monarchy, Japan’s capital, Tokyo, stands as one of the most populous and technologically advanced metropolitan areas globally. </p>
+         <img src="https://w.wallhaven.cc/full/kn/wallhaven-knmgmn.png" alt="" />
           </div>
           <div className="kanan">
-            <img src="https://w.wallhaven.cc/full/kn/wallhaven-knmgmn.png" alt="" />
+             <h1>Japan</h1>
+          <p>Japan, a mountainous island nation in East Asia known as the "Land of the Rising Sun," consists of 6,852 islands, with four main islands—Honshu, Hokkaido, Kyushu, and Shikoku—comprising most of its land area. As a parliamentary, constitutional monarchy with a population of ~123 million, it is a global economic leader renowned for blending ancient traditions with high-tech modernity.</p>
+            
           </div>
         </div>
       </div>
-      <h1 className="popular">Popular place On japan</h1>
+      <h1 className="popular">Popular place On  <strong className="jp">Japan</strong></h1>
       <Slider></Slider>
+      <h1 className="popular"><strong className="jp">Japan</strong> Maps</h1>
+      <Map></Map>
     </>
   );
 }

@@ -61,6 +61,12 @@ nav ul li {
   text-decoration: none;
   color: rgb(20, 20, 20);
   font-size: larger;
+  transition: all 0.5s ease;
+}
+nav ul li:hover{
+  transform: scale(1.01);
+  color: red;
+  cursor: pointer;
 }
 .kanan-nav{
   display: flex;
@@ -73,6 +79,11 @@ nav ul li {
 .mode {
   width: 20px;
   height: auto;
+  transition: all 0.3s ease;
+}
+.mode:hover{
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .kiri-nav{
@@ -82,7 +93,6 @@ nav ul li {
 .hero{
   left: auto;
   z-index: 1;
-  color: rgb(234, 234, 234);
   width: 170vh;
   justify-content: center;
   align-items: center;
@@ -90,14 +100,19 @@ nav ul li {
   display: flex;
   gap: 100px;
 }
-.kiri{
+.kanan{
   width: 500px;
 }
-.kiri h1{
+.kanan h1{
   margin-bottom: 20px;
+  color: rgb(233, 0, 0);
 }
-.kanan img {
-  box-shadow: 20px 20px 40px black;
+.kanan p {
+  font-size: larger;
+  color: rgb(210, 210, 209);
+}
+.kiri img {
+  box-shadow: -20px 20px 20px black;
   border-radius: 5px;
   width: 400px;
 }
@@ -110,6 +125,7 @@ nav ul li {
   width: 290px;
 }
 .search:focus{
+  color: rgb(44, 44, 44);
   outline: 2px solid rgb(130, 130, 255);
 }
 .profile{
@@ -129,6 +145,9 @@ nav ul li {
   height: 200px;
   object-fit: cover;
   border-radius: 10px 10px 10px 10px;
+}
+p{
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container-warper{
   box-shadow: 10px 10px 20px black;
@@ -153,6 +172,13 @@ nav ul li {
   overflow: auto;
   min-height: 0;
 }
+.container-warper h3{
+  margin: 5px 0 0 10px;
+  color: rgb(253, 0, 0);
+}
+.jp{
+  color: red;
+}
 .isi-2{
   padding: 40px 50px;
   display: flex;
@@ -169,4 +195,17 @@ nav ul li {
   padding-top: 50px;
   text-align: center;
   color: rgb(20, 20, 20);
+}
+#map {
+  width: 900px;
+  height: 600px;
+}
+.kanan-map{
+  margin:0 100px 0 500px;
+}
+.kanan-map p {
+  margin-top: 20px;
+  color: rgb(225, 225, 225);
+  font-size: large;
+  gap: 5px;
 }
