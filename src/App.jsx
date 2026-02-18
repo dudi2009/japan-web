@@ -1,7 +1,21 @@
+import React from "react";
 import "./index.css"
 import Slider from "./Slider.jsx";
 
 export default function (){
+  const [dark, setDark] = React.useState(() => {
+    const saved = localStorage.getItem('dark-mode');
+    return saved === 'true';
+  });
+
+  React.useEffect(() => {
+    if (dark) {
+      document.documentElement.classList.add('dark-mode');
+    } else {
+      document.documentElement.classList.remove('dark-mode');
+    }
+    localStorage.setItem('dark-mode', dark);
+  }, [dark]);
   return(
     <>
     <nav>
@@ -16,7 +30,7 @@ export default function (){
       <div className="kanan-nav">
         <input type="text" className="search" placeholder="Search" />
         <img src="https://i.pinimg.com/1200x/5f/e3/61/5fe3615a6b4129fc904d4423e33cd505.jpg" alt="" className="profile" />
-        <button>Light</button>
+        <button onClick={()=>setDark(d=>!d)}><img src="/mode.png" alt="" className="mode" /></button>
       </div>
     </nav>
       <div className="isi">
@@ -33,7 +47,6 @@ export default function (){
       </div>
       <h1 className="popular">Popular place On japan</h1>
       <Slider></Slider>
-     
     </>
   );
 }

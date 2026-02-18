@@ -5,6 +5,29 @@
 body{
   background-color: rgb(231, 231, 231);
 }
+
+.dark-mode body {
+  background-color: #181818;
+}
+.dark-mode nav {
+  background-color: #232323;
+}
+.dark-mode nav ul li {
+  color: #f1f1f1;
+}
+.dark-mode .hero {
+  color: #eaeaea;
+}
+.dark-mode .container-warper {
+  background-color: #232323;
+  color: #f1f1f1;
+}
+.dark-mode .popular {
+  color: #f1f1f1;
+}
+.dark-mode .mode {
+  filter: invert(1);
+}
 .background{
   background-image: linear-gradient(to top , #000000e8, #00000000), url("https://w.wallhaven.cc/full/g7/wallhaven-g7jlde.jpg");
   background-size: cover;
@@ -25,6 +48,9 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 nav ul{
   display: flex;
@@ -39,6 +65,16 @@ nav ul li {
 .kanan-nav{
   display: flex;
 }
+.kanan-nav button{
+  border: none;
+  margin-right:5px ;
+  background-color: #00000000;
+}
+.mode {
+  width: 20px;
+  height: auto;
+}
+
 .kiri-nav{
   padding-left: 20px;
   display: flex;
@@ -73,15 +109,18 @@ nav ul li {
   box-shadow: 2px 2px 10px black ;
   width: 290px;
 }
+.search:focus{
+  outline: 2px solid rgb(130, 130, 255);
+}
 .profile{
   width: 30px;
   height: 30px;
   border-radius: 20px;
   margin: 0 20px 0;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
 }
 .profile:hover{
-  transform: scale(1.2);
+  transform: scale(1.02 );
   cursor: pointer;
 }
 
@@ -94,18 +133,38 @@ nav ul li {
 .container-warper{
   box-shadow: 10px 10px 20px black;
   width: 300px;
+  height: 420px;
   border-radius: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.container-warper:hover{
+  transform: scale(1.01);
+  cursor: pointer;
 }
 .container-warper p{
- margin: 20px;
+  margin: 20px;
+  flex: 1 1 auto;
+  overflow: auto;
+  min-height: 0;
 }
 .isi-2{
+  padding: 40px 50px;
   display: flex;
   gap: 50px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+    scroll-padding-left: 0;
 }
+.isi-2::-webkit-scrollbar{display: none;}
 .popular{
   padding-top: 50px;
   text-align: center;
