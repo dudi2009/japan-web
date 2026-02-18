@@ -2,6 +2,8 @@ import React from "react";
 import "./index.css"
 import Slider from "./Slider.jsx";
 import Map from "./Map.jsx";
+import Intrest from "./intrest.jsx";
+import Footer from "./Footer.jsx";
 
 
 export default function (){
@@ -52,6 +54,9 @@ export default function (){
       <Slider></Slider>
       <h1 className="popular"><strong className="jp">Japan</strong> Maps</h1>
       <Map></Map>
+      <h1 className="popular">Find Your Intrest About<strong className="jp"> Japan</strong></h1>
+      <Intrest></Intrest>
+      <Footer></Footer>
     </>
   );
 }

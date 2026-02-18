@@ -26,7 +26,7 @@ export default function Map() {
   }, []);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', margin: '50px 0' }}>
+    <div style={{ display: 'flex', alignItems: 'flex-start', gap: '2rem', margin: '50px 50px 400px 50px' }}>
       <div style={{ flex: '0 0 420px', minWidth: 320, maxWidth: 420, minHeight: 400 }}>
         <div id="map" style={{ width: 400, height: 400, aspectRatio: '1 / 1' }}></div>
       </div>

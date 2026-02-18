@@ -1,3 +1,57 @@
+/* Footer Styles */
+.footer {
+  background: #181818;
+  color: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  padding: 40px 0 10px 0;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.footer-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #232323;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  color: #fff;
+  transition: background 0.3s, color 0.3s;
+}
+.footer-icons a:hover {
+  background: #fff;
+  color: #181818;
+}
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.footer-menu li {
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.footer-menu li:hover {
+  color: #ff5252;
+}
+.footer-copyright {
+  background: #111;
+  padding: 8px 0;
+  font-size: 0.95rem;
+  border-radius: 0 0 8px 8px;
+}
 *{
   margin: 0;
   padding: 0;
@@ -28,6 +82,16 @@ body{
 .dark-mode .mode {
   filter: invert(1);
 }
+.dark-mode .kanan-map p {
+  color: rgb(225, 225, 225);
+}
+.dark-mode .card h1 {
+  color: #f1f1f1;
+}
+.dark-mode .etc {
+  border: solid 2px rgba(255, 255, 255, 0.73);
+  color: white;
+}
 .background{
   background-image: linear-gradient(to top , #000000e8, #00000000), url("https://w.wallhaven.cc/full/g7/wallhaven-g7jlde.jpg");
   background-size: cover;
@@ -51,6 +115,7 @@ nav{
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-radius: 0 0 10px 10px;
 }
 nav ul{
   display: flex;
@@ -126,7 +191,7 @@ nav ul li:hover{
 }
 .search:focus{
   color: rgb(44, 44, 44);
-  outline: 2px solid rgb(130, 130, 255);
+  outline: 2px solid rgb(220, 5, 5);
 }
 .profile{
   width: 30px;
@@ -192,7 +257,7 @@ p{
 }
 .isi-2::-webkit-scrollbar{display: none;}
 .popular{
-  padding-top: 50px;
+  padding-top: 100px;
   text-align: center;
   color: rgb(20, 20, 20);
 }
@@ -205,7 +270,96 @@ p{
 }
 .kanan-map p {
   margin-top: 20px;
-  color: rgb(225, 225, 225);
+  color: #181818;
   font-size: large;
   gap: 5px;
+}
+.box-warp{
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.card img {
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.907), rgba(0,0,0,0.1) 60%, rgba(0,0,0,0) 100%);
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 15px;
+}
+.card:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+/* .card:hover::after {
+  background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0.6) 60%, rgba(0,0,0,0) 100%);
+} */
+.card h1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  text-shadow: 0 2px 8px #000;
+  padding: 0 15px 20px 15px;
+  color: #fff;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.etc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 170px;
+  height: 50px;
+  background-color: #00000000;
+  border: solid 2px rgba(0, 0, 0, 0.567);
+  border-radius: 20px;
+  margin: 20px auto 0 auto;
+}
+.footer{
+  margin-top: 200px;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  height: 50px;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:50px;
+  list-style: none;
+  background-color: #181818;
+  height: 100px;
+}
+.footer ul li {
+  color: white;
+  border: solid 2px white;
+  border: 20px;
 }
