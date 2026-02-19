@@ -41,7 +41,7 @@ export default function Intrest() {
           </div>
         ))}
       </div>
-      <button className="etc">See all Intresest > </button>
+      <button className="etc">See all Intresest  </button>
     </>
   );
 }
