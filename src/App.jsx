@@ -58,7 +58,7 @@ export default function (){
       <h1 className="popular">Find Your Intrest About<strong className="jp"> Japan</strong></h1>
       <Intrest></Intrest>
       <h1 className="popular">Articles About<strong className="jp"> Japan</strong></h1>
-      {/* <Articles></Articles> */}
+      <Articles></Articles>
       <Footer></Footer>
     </>
   );
