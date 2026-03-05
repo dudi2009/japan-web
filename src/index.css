@@ -61,14 +61,17 @@
 body{
   background-color: rgb(231, 231, 231);
 }
-
+nav ul li a{
+  font-style: none;
+  text-decoration: none;
+}
 .dark-mode body {
   background-color: #181818;
 }
 .dark-mode nav {
   background-color: #232323;
 }
-.dark-mode nav ul li {
+.dark-mode nav ul li a{
   color: #f1f1f1;
 }
 .dark-mode .hero {
@@ -128,13 +131,13 @@ nav ul{
   gap: 10px;
   list-style: none;
 }
-nav ul li {
+nav ul li a{
   text-decoration: none;
   color: rgb(20, 20, 20);
   font-size: larger;
   transition: all 0.5s ease;
 }
-nav ul li:hover{
+nav ul li a:hover{
   transform: scale(1.01);
   color: red;
   cursor: pointer;
